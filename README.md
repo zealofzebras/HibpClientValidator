@@ -41,6 +41,8 @@ Get the library from NPM (https://www.npmjs.com/package/hibpvalidator) or downlo
 
 Include them in your project
 ```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js" integrity="sha256-bu/BP02YMudBc96kI7yklc639Mu4iKGUNNcam8D2nLc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js" integrity="sha256-9GycpJnliUjJDVDqP0UEu/bsm9U+3dnQUH8+3W10vkY=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.js" integrity="sha256-LmIVkNdxjrHbViQZD9LSewZc+3rU/alc7P/UJj6mUPc=" crossorigin="anonymous"></script>
 <script src="~/scripts/hibpvalidator.js"></script>
 ```
