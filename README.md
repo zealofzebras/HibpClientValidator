@@ -1,13 +1,17 @@
 # HibpClientValidator
-Client Validator for MVC (both Core and Framework) that validates passwords against the https://haveibeenpwned.com/ password database. It will not tell how many times a password has been used as it is not relevant. If it has been leaked, it should not be used again.
+Unobtrusive jQuery Validation plugin that validates passwords against the https://haveibeenpwned.com/ password database. It will not tell how many times a password has been used as it is not relevant. If it has been leaked, it should not be used again.
 
-## Installation
+Additionally a Client Validator for MVC (both Core and Framework) is provided
+
+## Usage and installation in Asp.Net MVC
+
+### Installation
 
 ```powershell
 Install-Package Sustainable.Web.Mvc.HibpClientValidator
 ```
 
-## Usage
+### Usage
 
 In the models that you want to check (hint: `RegisterViewModel` and `ChangePasswordViewModel` are good candidates)
 
@@ -27,6 +31,33 @@ Make sure to add `hibpvalidator.js` and `sha1.js` to one of your bundles or dire
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.js" integrity="sha256-LmIVkNdxjrHbViQZD9LSewZc+3rU/alc7P/UJj6mUPc=" crossorigin="anonymous"></script>
 <script src="~/scripts/hibpvalidator.js"></script>
+```
+
+## Usage and Installation in javascript
+
+### Installation
+
+Get the library from NPM (https://www.npmjs.com/package/hibpvalidator) or download the `hibpvalidator.js` and reference `sha1.js` additional requirements are jQuery, jQuery validation and jQuery unobtrusive validation.
+
+Include them in your project
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.js" integrity="sha256-LmIVkNdxjrHbViQZD9LSewZc+3rU/alc7P/UJj6mUPc=" crossorigin="anonymous"></script>
+<script src="~/scripts/hibpvalidator.js"></script>
+```
+
+Then decorate your html forms with unobtrusive validation arguments
+
+```html
+<input type="password" 
+    data-val="true" 
+    data-val-hibp="This password has been exposed in password leaks, please choose another" 
+    data-val-hibp-checking="Checking password..." data-val-length="The Password must be at least 6 and at max 100 characters long." 
+    data-val-length-max="100" 
+    data-val-length-min="6" 
+    data-val-required="The Password field is required." id="Password" name="Password" />
+<span class="text-danger field-validation-valid" 
+    data-valmsg-for="Password" 
+    data-valmsg-replace="true"></span>
 ```
 
 ## Alternatives
