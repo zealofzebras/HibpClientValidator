@@ -37,6 +37,8 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <PackageFile Include="readme.txt">
+    </PackageFile>
     <PackageFile Include="hibpvalidator.net.js">
       <Kind>Content</Kind>
       <CodeLanguage>any</CodeLanguage>
