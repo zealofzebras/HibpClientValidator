@@ -11,16 +11,18 @@
     <Title>HibpClientValidator</Title>
     <Authors>zeal aps</Authors>
     <Owners>zeal aps</Owners>
-    <Summary>HibpClientValidatorNuget</Summary>
-    <Description>HibpClientValidatorNuget</Description>
+    <Summary>Client Validator for MVC (both Core and Framework) that validates passwords against the https://haveibeenpwned.com/ password database.</Summary>
+    <Description>The client validator will (using javascript and unobtrusive client validation) tell the user if the typed password has been previously leaked. It will not tell how many times a password has been used as it is not relevant. If it has been leaked, it should not be used again.
+    
+    The package DOES depend on MVC for both Core and Framework, but has explicitly removed the dependencies for nuget. Minimum required MVC version is 5.0.1. For ASP.Net core MVC, you must download and reference the javascript manually (https://github.com/zealofzebras/HibpClientValidator/blob/master/HibpClientValidatorNuget/hibpvalidator.core.js)    </Description>
     <PackageReleaseNotes>
     </PackageReleaseNotes>
-    <PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/zealofzebras/HibpClientValidator
     </PackageProjectUrl>
     <PackageLicenseUrl>
     </PackageLicenseUrl>
     <Copyright>HIBP copyright Troy Hunt</Copyright>
-    <PackageTags>Hibp, ClientValidator,</PackageTags>
+    <PackageTags>Hibp, ClientValidator, Javascript</PackageTags>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
     <TargetFramework>netstandard1.0</TargetFramework>
     <PackageTargetFallback>net11;net20;net35;net40;net403;net45;net451;net452;net46;net461;net462;net47;net471;netcore;netcore45;netcore451;netcore50;win8;win81;win10;sl4;sl5;wp;wp7;wp75;wp8;wp81;wpa81;uap;uap10;netstandard1.0;netstandard1.1;netstandard1.2;netstandard1.3;netstandard1.4;netstandard1.5;netstandard1.6;netstandard2.0;netcoreapp1.0;netcoreapp2.0;monoandroid;monotouch;monomac;xamarinios;xamarinmac;xamarinpsthree;xamarinpsfour;xamarinpsvita;xamarinwatchos;xamarintvos;xamarinxboxthreesixty;xamarinxboxone</PackageTargetFallback>

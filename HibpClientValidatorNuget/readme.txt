@@ -14,3 +14,13 @@ For asp.net core projects it will not install the javascript file automatically,
 
 The client javascript can be downloaded here:
 https://github.com/zealofzebras/HibpClientValidator/blob/master/HibpClientValidatorNuget/hibpvalidator.core.js
+
+
+In the models that you want to check (hint: RegisterViewModel and ChangePasswordViewModel are good candidates)
+
+add
+using HibpClientValidator;
+
+
+and decorate the appropriate properties with the Hibp attribute:
+[Hibp("This password has been exposed in password leaks, please choose another", "Checking password...")]
