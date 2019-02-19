@@ -34,10 +34,15 @@ Make sure to add `hibpvalidator.js` and `sha1.js` to one of your bundles or dire
 Why should you use this instead of something like:
 https://www.nuget.org/packages/Matrixsoft.PwnedPasswords/
 
-Since this is a client validator, it runs in the users browser. This creates a better user experience (it is faster) and the bandwith is reduced from the server.
+Since this is a client validator, it runs in the users browser. This creates a better user experience (it is faster) and the bandwith is reduced from the server. It is damn easy to implement.
 
 ## Accolades
 
 Obviously this is a small wrapper for the massive work done by Troy Hunt:
 * https://www.troyhunt.com/
 * https://haveibeenpwned.com/
+
+## Demonstration
+
+The package is in live use on these sites (make a PR if you know more)
+* https://angled.ca/Account/Register
