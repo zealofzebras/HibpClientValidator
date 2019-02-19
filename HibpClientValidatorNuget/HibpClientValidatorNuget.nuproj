@@ -42,12 +42,13 @@
       <CodeLanguage>any</CodeLanguage>
       <TargetFramework>net45</TargetFramework>
       <PackagePath>content\scripts\hibpvalidator.js</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
     </PackageFile>
     <PackageFile Include="hibpvalidator.core.js">
       <Kind>Content</Kind>
       <CodeLanguage>any</CodeLanguage>
       <TargetFramework>netcore</TargetFramework>
-      <TargetPath>wwwroot\scripts\hibpvalidator.js</TargetPath>
+      <TargetPath>wwwroot\js\hibpvalidator.js</TargetPath>
       <PackageCopyToOutput>true</PackageCopyToOutput>
     </PackageFile>
   </ItemGroup>
