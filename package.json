@@ -1,0 +1,21 @@
+{
+  "name": "hibpvalidator",
+  "description": "plugin for unobtrusive jQuery Validation against the https://haveibeenpwned.com/ password database",
+  "version": "1.0.0",    
+  "homepage": "https://github.com/zealofzebras/HibpClientValidator",
+  "author": "zeal aps",
+  "license":  "MIT",
+  "browser" : "hibpvalidator.js",
+  "files" : ["hibpvalidator.js"],
+  "dependencies": {
+    "js-sha1" : "latest"
+  },
+  "keywords": ["hibp","validation","jquery"],
+  "bugs": {
+    "web": "https://github.com/zealofzebras/HibpClientValidator/issues"
+  },
+  "repository": {
+    "type" : "git",
+    "url": "https://github.com/zealofzebras/HibpClientValidator.git"
+  }
+}
