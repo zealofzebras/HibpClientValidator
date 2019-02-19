@@ -7,7 +7,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <PackageId>Sustainable.Web.Mvc.HibpClientValidator</PackageId>
-    <PackageVersion Condition="'$(PackageVersion)' == ''">1.0.0</PackageVersion>
+    <PackageVersion Condition="'$(PackageVersion)' == ''">1.0.$([System.DateTime]::Now.ToString(`yyyyMMdd`)).$([System.DateTime]::Now.ToString(`HHmm`))</PackageVersion>
     <Title>HibpClientValidator</Title>
     <Authors>zeal aps</Authors>
     <Owners>zeal aps</Owners>
@@ -31,28 +31,28 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" />
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging">
-      <Version>0.2.5-dev.1</Version>
+      <Version>0.2.5-dev.8</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HibpClientValidatorNet\HibpClientValidatorNet.csproj" />
-    <ProjectReference Include="..\HibpClientValidatorStandard\HibpClientValidatorStandard.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageFile Include="scripts\hibpvalidator.js" >
+    <PackageFile Include="hibpvalidator.net.js">
       <Kind>Content</Kind>
       <CodeLanguage>any</CodeLanguage>
       <TargetFramework>net45</TargetFramework>
       <TargetPath>scripts\hibpvalidator.js</TargetPath>
     </PackageFile>
-    <PackageFile Include="wwwroot\scripts\hibpvalidator.js" >
+    <PackageFile Include="hibpvalidator.core.js">
       <Kind>Content</Kind>
       <CodeLanguage>any</CodeLanguage>
-      <TargetFramework>netstandard2.0</TargetFramework>
+      <TargetFramework>netcore</TargetFramework>
       <TargetPath>wwwroot\scripts\hibpvalidator.js</TargetPath>
     </PackageFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HibpClientValidatorNet\HibpClientValidatorNet.csproj" />
+    <ProjectReference Include="..\HibpClientValidatorStandard\HibpClientValidatorStandard.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HibpClientValidatorNet", "HibpClientValidatorNet\HibpClientValidatorNet.csproj", "{BED849E9-F984-4CF3-9F55-EA30DCE4D180}"
-EndProject
 Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "HibpClientValidatorNuget", "HibpClientValidatorNuget\HibpClientValidatorNuget.nuproj", "{F3CB3D6A-2660-4370-B69B-0ABABAF322B6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HibpClientValidatorStandard", "HibpClientValidatorStandard\HibpClientValidatorStandard.csproj", "{A3F303D9-C3D5-432B-85D2-3A74403C5C4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HibpClientValidatorNet", "HibpClientValidatorNet\HibpClientValidatorNet.csproj", "{BED849E9-F984-4CF3-9F55-EA30DCE4D180}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BED849E9-F984-4CF3-9F55-EA30DCE4D180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BED849E9-F984-4CF3-9F55-EA30DCE4D180}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BED849E9-F984-4CF3-9F55-EA30DCE4D180}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BED849E9-F984-4CF3-9F55-EA30DCE4D180}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F3CB3D6A-2660-4370-B69B-0ABABAF322B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F3CB3D6A-2660-4370-B69B-0ABABAF322B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3CB3D6A-2660-4370-B69B-0ABABAF322B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{A3F303D9-C3D5-432B-85D2-3A74403C5C4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3F303D9-C3D5-432B-85D2-3A74403C5C4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3F303D9-C3D5-432B-85D2-3A74403C5C4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED849E9-F984-4CF3-9F55-EA30DCE4D180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED849E9-F984-4CF3-9F55-EA30DCE4D180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED849E9-F984-4CF3-9F55-EA30DCE4D180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED849E9-F984-4CF3-9F55-EA30DCE4D180}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
